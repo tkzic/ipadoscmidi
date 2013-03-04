@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1202E7AF14B799E900A0EA6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1202E7AE14B799E900A0EA6B /* UIKit.framework */; };
+		1202E7B114B799E900A0EA6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1202E7B014B799E900A0EA6B /* Foundation.framework */; };
+		1202E7B314B799E900A0EA6B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1202E7B214B799E900A0EA6B /* CoreGraphics.framework */; };
+		1202E7B914B799E900A0EA6B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1202E7B714B799E900A0EA6B /* InfoPlist.strings */; };
+		1202E7BB14B799E900A0EA6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1202E7BA14B799E900A0EA6B /* main.m */; };
+		1202E7BF14B799E900A0EA6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1202E7BE14B799E900A0EA6B /* AppDelegate.m */; };
+		1202E7C214B799E900A0EA6B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1202E7C114B799E900A0EA6B /* ViewController.m */; };
+		1202E7C514B799E900A0EA6B /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1202E7C314B799E900A0EA6B /* ViewController_iPhone.xib */; };
+		1202E7C814B799E900A0EA6B /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1202E7C614B799E900A0EA6B /* ViewController_iPad.xib */; };
+		1202E7E814B79C9900A0EA6B /* IpEndpointName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1202E7D114B79C9900A0EA6B /* IpEndpointName.cpp */; };
+		1202E7E914B79C9900A0EA6B /* NetworkingUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1202E7D614B79C9900A0EA6B /* NetworkingUtils.cpp */; };
+		1202E7EA14B79C9900A0EA6B /* UdpSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1202E7D714B79C9900A0EA6B /* UdpSocket.cpp */; };
+		1202E7EB14B79C9900A0EA6B /* OscOutboundPacketStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1202E7DF14B79C9900A0EA6B /* OscOutboundPacketStream.cpp */; };
+		1202E7EC14B79C9900A0EA6B /* OscPrintReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1202E7E214B79C9900A0EA6B /* OscPrintReceivedElements.cpp */; };
+		1202E7ED14B79C9900A0EA6B /* OscReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1202E7E414B79C9900A0EA6B /* OscReceivedElements.cpp */; };
+		1202E7EE14B79C9900A0EA6B /* OscTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1202E7E614B79C9900A0EA6B /* OscTypes.cpp */; };
+		1202E7F114B79CD000A0EA6B /* OscManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1202E7F014B79CD000A0EA6B /* OscManager.mm */; };
+		1242CF1A14D7522100E2259D /* PGMidi.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1242CF1514D7522100E2259D /* PGMidi.mm */; };
+		1242CF1B14D7522100E2259D /* PGMidiAllSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1242CF1714D7522100E2259D /* PGMidiAllSources.mm */; };
+		1242CF1C14D7522100E2259D /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1242CF1914D7522100E2259D /* PGMidiFind.mm */; };
+		1242CF2514D7528500E2259D /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1242CF2414D7528500E2259D /* CoreMIDI.framework */; };
+		1242CF2814D757DC00E2259D /* MidiEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1242CF2714D757DC00E2259D /* MidiEngine.mm */; };
+		124C5A7516E44A3900A7CB3C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 124C5A7416E44A3900A7CB3C /* Default-568h@2x.png */; };
+		1281B04816E488D100AC2C10 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1281B04716E488D100AC2C10 /* readme.txt */; };
+		129F3BF714CB451A0048ABC2 /* OscArg.m in Sources */ = {isa = PBXBuildFile; fileRef = 129F3BF614CB451A0048ABC2 /* OscArg.m */; };
+		129F3BFA14CB4A700048ABC2 /* OscMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 129F3BF914CB4A700048ABC2 /* OscMessage.m */; };
+		12DB667414DF5FB200D42A21 /* OscEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 12DB667314DF5FB200D42A21 /* OscEngine.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1202E7AA14B799E900A0EA6B /* ipadoscmidi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ipadoscmidi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1202E7AE14B799E900A0EA6B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1202E7B014B799E900A0EA6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1202E7B214B799E900A0EA6B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1202E7B614B799E900A0EA6B /* ipadoscmidi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ipadoscmidi-Info.plist"; sourceTree = "<group>"; };
+		1202E7B814B799E900A0EA6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1202E7BA14B799E900A0EA6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1202E7BC14B799E900A0EA6B /* ipadoscmidi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ipadoscmidi-Prefix.pch"; sourceTree = "<group>"; };
+		1202E7BD14B799E900A0EA6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1202E7BE14B799E900A0EA6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1202E7C014B799E900A0EA6B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		1202E7C114B799E900A0EA6B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		1202E7C414B799E900A0EA6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		1202E7C714B799E900A0EA6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		1202E7D114B79C9900A0EA6B /* IpEndpointName.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IpEndpointName.cpp; sourceTree = "<group>"; };
+		1202E7D214B79C9900A0EA6B /* IpEndpointName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpEndpointName.h; sourceTree = "<group>"; };
+		1202E7D314B79C9900A0EA6B /* NetworkingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingUtils.h; sourceTree = "<group>"; };
+		1202E7D414B79C9900A0EA6B /* PacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketListener.h; sourceTree = "<group>"; };
+		1202E7D614B79C9900A0EA6B /* NetworkingUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkingUtils.cpp; sourceTree = "<group>"; };
+		1202E7D714B79C9900A0EA6B /* UdpSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UdpSocket.cpp; sourceTree = "<group>"; };
+		1202E7D814B79C9900A0EA6B /* TimerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerListener.h; sourceTree = "<group>"; };
+		1202E7D914B79C9900A0EA6B /* UdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UdpSocket.h; sourceTree = "<group>"; };
+		1202E7DC14B79C9900A0EA6B /* MessageMappingOscPacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageMappingOscPacketListener.h; sourceTree = "<group>"; };
+		1202E7DD14B79C9900A0EA6B /* OscException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscException.h; sourceTree = "<group>"; };
+		1202E7DE14B79C9900A0EA6B /* OscHostEndianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscHostEndianness.h; sourceTree = "<group>"; };
+		1202E7DF14B79C9900A0EA6B /* OscOutboundPacketStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscOutboundPacketStream.cpp; sourceTree = "<group>"; };
+		1202E7E014B79C9900A0EA6B /* OscOutboundPacketStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscOutboundPacketStream.h; sourceTree = "<group>"; };
+		1202E7E114B79C9900A0EA6B /* OscPacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscPacketListener.h; sourceTree = "<group>"; };
+		1202E7E214B79C9900A0EA6B /* OscPrintReceivedElements.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscPrintReceivedElements.cpp; sourceTree = "<group>"; };
+		1202E7E314B79C9900A0EA6B /* OscPrintReceivedElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscPrintReceivedElements.h; sourceTree = "<group>"; };
+		1202E7E414B79C9900A0EA6B /* OscReceivedElements.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscReceivedElements.cpp; sourceTree = "<group>"; };
+		1202E7E514B79C9900A0EA6B /* OscReceivedElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscReceivedElements.h; sourceTree = "<group>"; };
+		1202E7E614B79C9900A0EA6B /* OscTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscTypes.cpp; sourceTree = "<group>"; };
+		1202E7E714B79C9900A0EA6B /* OscTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscTypes.h; sourceTree = "<group>"; };
+		1202E7EF14B79CD000A0EA6B /* OscManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = OscManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		1202E7F014B79CD000A0EA6B /* OscManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = OscManager.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		1242CF1414D7522100E2259D /* PGMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidi.h; sourceTree = "<group>"; };
+		1242CF1514D7522100E2259D /* PGMidi.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidi.mm; sourceTree = "<group>"; };
+		1242CF1614D7522100E2259D /* PGMidiAllSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiAllSources.h; sourceTree = "<group>"; };
+		1242CF1714D7522100E2259D /* PGMidiAllSources.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiAllSources.mm; sourceTree = "<group>"; };
+		1242CF1814D7522100E2259D /* PGMidiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiFind.h; sourceTree = "<group>"; };
+		1242CF1914D7522100E2259D /* PGMidiFind.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiFind.mm; sourceTree = "<group>"; };
+		1242CF2414D7528500E2259D /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		1242CF2614D757DC00E2259D /* MidiEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiEngine.h; sourceTree = "<group>"; };
+		1242CF2714D757DC00E2259D /* MidiEngine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MidiEngine.mm; sourceTree = "<group>"; };
+		124C5A7416E44A3900A7CB3C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		1281B04716E488D100AC2C10 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = SOURCE_ROOT; };
+		129F3BF514CB451A0048ABC2 /* OscArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscArg.h; sourceTree = "<group>"; };
+		129F3BF614CB451A0048ABC2 /* OscArg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OscArg.m; sourceTree = "<group>"; };
+		129F3BF814CB4A700048ABC2 /* OscMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscMessage.h; sourceTree = "<group>"; };
+		129F3BF914CB4A700048ABC2 /* OscMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OscMessage.m; sourceTree = "<group>"; };
+		12DB667214DF5FB200D42A21 /* OscEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscEngine.h; sourceTree = "<group>"; };
+		12DB667314DF5FB200D42A21 /* OscEngine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OscEngine.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1202E7A714B799E900A0EA6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1242CF2514D7528500E2259D /* CoreMIDI.framework in Frameworks */,
+				1202E7AF14B799E900A0EA6B /* UIKit.framework in Frameworks */,
+				1202E7B114B799E900A0EA6B /* Foundation.framework in Frameworks */,
+				1202E7B314B799E900A0EA6B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1202E79F14B799E900A0EA6B = {
+			isa = PBXGroup;
+			children = (
+				1202E7B414B799E900A0EA6B /* ipadosctest */,
+				1202E7AD14B799E900A0EA6B /* Frameworks */,
+				1202E7AB14B799E900A0EA6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1202E7AB14B799E900A0EA6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1202E7AA14B799E900A0EA6B /* ipadoscmidi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1202E7AD14B799E900A0EA6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1242CF2414D7528500E2259D /* CoreMIDI.framework */,
+				1202E7AE14B799E900A0EA6B /* UIKit.framework */,
+				1202E7B014B799E900A0EA6B /* Foundation.framework */,
+				1202E7B214B799E900A0EA6B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1202E7B414B799E900A0EA6B /* ipadosctest */ = {
+			isa = PBXGroup;
+			children = (
+				12DB667014DF5F9B00D42A21 /* Osc Engine */,
+				1242CF1314D7522100E2259D /* MIDI */,
+				1202E7CE14B79C2B00A0EA6B /* oscpack */,
+				129F3BFB14CB4FB40048ABC2 /* oscmanager */,
+				1202E7CF14B79C3800A0EA6B /* Midi Engine */,
+				120B52D916E483220051413D /* Classes */,
+				1202E7B514B799E900A0EA6B /* Supporting Files */,
+			);
+			name = ipadosctest;
+			path = tzoscipad1;
+			sourceTree = "<group>";
+		};
+		1202E7B514B799E900A0EA6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1281B04716E488D100AC2C10 /* readme.txt */,
+				124C5A7416E44A3900A7CB3C /* Default-568h@2x.png */,
+				1202E7B614B799E900A0EA6B /* ipadoscmidi-Info.plist */,
+				1202E7B714B799E900A0EA6B /* InfoPlist.strings */,
+				1202E7BA14B799E900A0EA6B /* main.m */,
+				1202E7BC14B799E900A0EA6B /* ipadoscmidi-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1202E7CE14B79C2B00A0EA6B /* oscpack */ = {
+			isa = PBXGroup;
+			children = (
+				1202E7D014B79C9900A0EA6B /* ip */,
+				1202E7DB14B79C9900A0EA6B /* osc */,
+			);
+			name = oscpack;
+			sourceTree = "<group>";
+		};
+		1202E7CF14B79C3800A0EA6B /* Midi Engine */ = {
+			isa = PBXGroup;
+			children = (
+				1242CF2614D757DC00E2259D /* MidiEngine.h */,
+				1242CF2714D757DC00E2259D /* MidiEngine.mm */,
+			);
+			name = "Midi Engine";
+			sourceTree = "<group>";
+		};
+		1202E7D014B79C9900A0EA6B /* ip */ = {
+			isa = PBXGroup;
+			children = (
+				1202E7D114B79C9900A0EA6B /* IpEndpointName.cpp */,
+				1202E7D214B79C9900A0EA6B /* IpEndpointName.h */,
+				1202E7D314B79C9900A0EA6B /* NetworkingUtils.h */,
+				1202E7D414B79C9900A0EA6B /* PacketListener.h */,
+				1202E7D514B79C9900A0EA6B /* posix */,
+				1202E7D814B79C9900A0EA6B /* TimerListener.h */,
+				1202E7D914B79C9900A0EA6B /* UdpSocket.h */,
+				1202E7DA14B79C9900A0EA6B /* win32 */,
+			);
+			name = ip;
+			path = oscpack/ip;
+			sourceTree = "<group>";
+		};
+		1202E7D514B79C9900A0EA6B /* posix */ = {
+			isa = PBXGroup;
+			children = (
+				1202E7D614B79C9900A0EA6B /* NetworkingUtils.cpp */,
+				1202E7D714B79C9900A0EA6B /* UdpSocket.cpp */,
+			);
+			path = posix;
+			sourceTree = "<group>";
+		};
+		1202E7DA14B79C9900A0EA6B /* win32 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = win32;
+			sourceTree = "<group>";
+		};
+		1202E7DB14B79C9900A0EA6B /* osc */ = {
+			isa = PBXGroup;
+			children = (
+				1202E7DC14B79C9900A0EA6B /* MessageMappingOscPacketListener.h */,
+				1202E7DD14B79C9900A0EA6B /* OscException.h */,
+				1202E7DE14B79C9900A0EA6B /* OscHostEndianness.h */,
+				1202E7DF14B79C9900A0EA6B /* OscOutboundPacketStream.cpp */,
+				1202E7E014B79C9900A0EA6B /* OscOutboundPacketStream.h */,
+				1202E7E114B79C9900A0EA6B /* OscPacketListener.h */,
+				1202E7E214B79C9900A0EA6B /* OscPrintReceivedElements.cpp */,
+				1202E7E314B79C9900A0EA6B /* OscPrintReceivedElements.h */,
+				1202E7E414B79C9900A0EA6B /* OscReceivedElements.cpp */,
+				1202E7E514B79C9900A0EA6B /* OscReceivedElements.h */,
+				1202E7E614B79C9900A0EA6B /* OscTypes.cpp */,
+				1202E7E714B79C9900A0EA6B /* OscTypes.h */,
+			);
+			name = osc;
+			path = oscpack/osc;
+			sourceTree = "<group>";
+		};
+		120B52D916E483220051413D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1202E7BD14B799E900A0EA6B /* AppDelegate.h */,
+				1202E7C614B799E900A0EA6B /* ViewController_iPad.xib */,
+				1202E7C314B799E900A0EA6B /* ViewController_iPhone.xib */,
+				1202E7C114B799E900A0EA6B /* ViewController.m */,
+				1202E7C014B799E900A0EA6B /* ViewController.h */,
+				1202E7BE14B799E900A0EA6B /* AppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1242CF1314D7522100E2259D /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				1242CF1414D7522100E2259D /* PGMidi.h */,
+				1242CF1514D7522100E2259D /* PGMidi.mm */,
+				1242CF1614D7522100E2259D /* PGMidiAllSources.h */,
+				1242CF1714D7522100E2259D /* PGMidiAllSources.mm */,
+				1242CF1814D7522100E2259D /* PGMidiFind.h */,
+				1242CF1914D7522100E2259D /* PGMidiFind.mm */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
+		129F3BFB14CB4FB40048ABC2 /* oscmanager */ = {
+			isa = PBXGroup;
+			children = (
+				1202E7EF14B79CD000A0EA6B /* OscManager.h */,
+				1202E7F014B79CD000A0EA6B /* OscManager.mm */,
+				129F3BF514CB451A0048ABC2 /* OscArg.h */,
+				129F3BF614CB451A0048ABC2 /* OscArg.m */,
+				129F3BF814CB4A700048ABC2 /* OscMessage.h */,
+				129F3BF914CB4A700048ABC2 /* OscMessage.m */,
+			);
+			name = oscmanager;
+			sourceTree = "<group>";
+		};
+		12DB667014DF5F9B00D42A21 /* Osc Engine */ = {
+			isa = PBXGroup;
+			children = (
+				12DB667214DF5FB200D42A21 /* OscEngine.h */,
+				12DB667314DF5FB200D42A21 /* OscEngine.mm */,
+			);
+			name = "Osc Engine";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1202E7A914B799E900A0EA6B /* ipadoscmidi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1202E7CB14B799E900A0EA6B /* Build configuration list for PBXNativeTarget "ipadoscmidi" */;
+			buildPhases = (
+				1202E7A614B799E900A0EA6B /* Sources */,
+				1202E7A714B799E900A0EA6B /* Frameworks */,
+				1202E7A814B799E900A0EA6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ipadoscmidi;
+			productName = tzoscipad1;
+			productReference = 1202E7AA14B799E900A0EA6B /* ipadoscmidi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1202E7A114B799E900A0EA6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 1202E7A414B799E900A0EA6B /* Build configuration list for PBXProject "ipadoscmidi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1202E79F14B799E900A0EA6B;
+			productRefGroup = 1202E7AB14B799E900A0EA6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1202E7A914B799E900A0EA6B /* ipadoscmidi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1202E7A814B799E900A0EA6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1202E7B914B799E900A0EA6B /* InfoPlist.strings in Resources */,
+				1202E7C514B799E900A0EA6B /* ViewController_iPhone.xib in Resources */,
+				1202E7C814B799E900A0EA6B /* ViewController_iPad.xib in Resources */,
+				124C5A7516E44A3900A7CB3C /* Default-568h@2x.png in Resources */,
+				1281B04816E488D100AC2C10 /* readme.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1202E7A614B799E900A0EA6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1202E7BB14B799E900A0EA6B /* main.m in Sources */,
+				1202E7BF14B799E900A0EA6B /* AppDelegate.m in Sources */,
+				1202E7C214B799E900A0EA6B /* ViewController.m in Sources */,
+				1202E7E814B79C9900A0EA6B /* IpEndpointName.cpp in Sources */,
+				1202E7E914B79C9900A0EA6B /* NetworkingUtils.cpp in Sources */,
+				1202E7EA14B79C9900A0EA6B /* UdpSocket.cpp in Sources */,
+				1202E7EB14B79C9900A0EA6B /* OscOutboundPacketStream.cpp in Sources */,
+				1202E7EC14B79C9900A0EA6B /* OscPrintReceivedElements.cpp in Sources */,
+				1202E7ED14B79C9900A0EA6B /* OscReceivedElements.cpp in Sources */,
+				1202E7EE14B79C9900A0EA6B /* OscTypes.cpp in Sources */,
+				1202E7F114B79CD000A0EA6B /* OscManager.mm in Sources */,
+				129F3BF714CB451A0048ABC2 /* OscArg.m in Sources */,
+				129F3BFA14CB4A700048ABC2 /* OscMessage.m in Sources */,
+				1242CF1A14D7522100E2259D /* PGMidi.mm in Sources */,
+				1242CF1B14D7522100E2259D /* PGMidiAllSources.mm in Sources */,
+				1242CF1C14D7522100E2259D /* PGMidiFind.mm in Sources */,
+				1242CF2814D757DC00E2259D /* MidiEngine.mm in Sources */,
+				12DB667414DF5FB200D42A21 /* OscEngine.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1202E7B714B799E900A0EA6B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1202E7B814B799E900A0EA6B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1202E7C314B799E900A0EA6B /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1202E7C414B799E900A0EA6B /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		1202E7C614B799E900A0EA6B /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1202E7C714B799E900A0EA6B /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1202E7C914B799E900A0EA6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1202E7CA14B799E900A0EA6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1202E7CC14B799E900A0EA6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tzoscipad1/ipadoscmidi-Prefix.pch";
+				INFOPLIST_FILE = "tzoscipad1/ipadoscmidi-Info.plist";
+				PRODUCT_NAME = ipadoscmidi;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1202E7CD14B799E900A0EA6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tzoscipad1/ipadoscmidi-Prefix.pch";
+				INFOPLIST_FILE = "tzoscipad1/ipadoscmidi-Info.plist";
+				PRODUCT_NAME = ipadoscmidi;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1202E7A414B799E900A0EA6B /* Build configuration list for PBXProject "ipadoscmidi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1202E7C914B799E900A0EA6B /* Debug */,
+				1202E7CA14B799E900A0EA6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1202E7CB14B799E900A0EA6B /* Build configuration list for PBXNativeTarget "ipadoscmidi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1202E7CC14B799E900A0EA6B /* Debug */,
+				1202E7CD14B799E900A0EA6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1202E7A114B799E900A0EA6B /* Project object */;
+}
